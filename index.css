@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+}
+
+#container {
+  margin: auto;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(16, [col] 0fr);
+  grid-template-rows: repeat(16, [row] auto);
+  grid-gap: 0px;
+}
+
+.columns {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(0, 0, 8);
+}
+
+.rows {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(10, 0, 0);
+}
+
+body div :hover {
+  background: #ff0000;
+  background: var(--div-background-color);
+}
