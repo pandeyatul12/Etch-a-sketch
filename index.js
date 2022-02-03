@@ -17,9 +17,6 @@ let classicBtn = document.querySelector("#classic-btn");
 
 function classicChange(){
   let boxs = document.querySelectorAll('.box');
-    boxs.forEach(box =>  {
-    box.style.backgroundColor = "white";
-  });
     boxs.forEach(box => box.addEventListener('mouseover', function change(){
     box.style.backgroundColor = "black";
   }))
@@ -42,9 +39,6 @@ let rainbowBtn = document.querySelector("#rainbow-btn");
 
 function rainbowChange(){
   let boxs = document.querySelectorAll('.box');
-    boxs.forEach(box =>  {
-    box.style.backgroundColor = "white";
-      });
     boxs.forEach(box => box.addEventListener('mouseover', function change(){
     color = getRandomColor();
     box.style.backgroundColor = color;
