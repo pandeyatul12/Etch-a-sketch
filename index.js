@@ -25,10 +25,10 @@ function classicChange(){
   }))
 }
 
-let eraseBtn = document.querySelector("#erase-btn");
-  eraseBtn.addEventListener("click", erase);
+let resetBtn = document.querySelector("#reset-btn");
+  resetBtn.addEventListener("click", reset);
   
-function erase(){
+function reset(){
   let boxs = document.querySelectorAll('.box');
     boxs.forEach(box =>  {
     box.style.backgroundColor = "white";
@@ -59,3 +59,15 @@ function getRandomColor() {
       }
     return color;
     }
+
+    
+let eraseBtn = document.querySelector("#erase-btn");
+eraseBtn.addEventListener("click", erase);
+
+function erase(){
+let boxs = document.querySelectorAll('.box');
+  boxs.forEach(box =>  {
+  box.addEventListener('mouseover', function change(){
+  box.style.backgroundColor = "white";
+  })
+})}
